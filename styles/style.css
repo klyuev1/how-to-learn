@@ -1,31 +1,321 @@
+/* Для начала правила для всей страницы */
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+
+
+/* Правила для Хэдера, его элементов и блоков */
+/* Правила для Хэдера, его элементов и блоков */
+/* Правила для Хэдера, его элементов и блоков */
 .header {
+  margin: 0;
+  box-sizing: border-box;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  position: relative;
+  display: flex;
+  background-color: #f2f2f2;
 }
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.logo {
+  background-image: url(../images/logo_place_header.svg);
+  width: 228px;
+  height: 32px;
+}
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+.header__title {
+  margin: auto 0 auto 64px;
+  max-width: 730px;
+  font-size: 102px;
+  font-weight: 600;
+  line-height: 96px;
+  z-index: 2;
+}
+.header__subtitle {
+  margin: 0;
+  width: 388px;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+  z-index: 2;
+}
+.header__subtitle-link{
+  text-decoration: none;
+}
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  z-index: 0;
 }
 
-/* и элемента с модификатором вида ключ-значение */
+
+
+/* Секция description */
+/* Секция description */
+/* Секция description */
+.description {
+  margin: 0;
+  padding: 0;
+  margin: 100px auto;
+  width: 80%;
+}
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+}
+.two-columns__brief {
+  margin: 0;
+  width: 175px;
+  font-size: 18px;
+  line-height: 1.2rem;
+  font-weight: normal;
+  color: #2f80ed;
+}
+.two-columns__main-text {
+  min-width: 784px;
+  width: 80%;
+}
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+.span-accent {
+  font-weight: 600;
+}
+.two-columns__paragraph:not(:last-child) {
+  margin: 0 0 30px 0;
+}
+.two-columns__paragraph:last-child {
+  margin: 0;
+}
+
+
+
+/* Секция digits */
+/* Секция digits */
+/* Секция digits */
+.digits {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0;
+}
+.section-title {
+  width: 60%;
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.15em;
+}
+.section-subtitle {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+}
+.table {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 1100px;
+  margin: auto;
+}
+.table__cell {
+  margin-top: 60px;
+  width: 250px;
+}
+.table__heading {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.15em;
+}
+.table__text {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2em;
+}
+.table__text:last-child {
+  margin-bottom: 0;
+}
+
+
+
+/* Секция feynman */
+/* Секция feynman */
+/* Секция feynman */
+.feynman {
+  height: 790px;
+  background:#f2f2f2 url(../images/feynman.png) no-repeat bottom left;
+  position: relative;
+  padding-top: 100px; 
+}
+.feynman__title {
+  width: 648px;
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 120px;
+  font-weight: 600;
+  line-height: 1.15em;
+  margin: auto;
+}
+.feynman__subtitle {
+  text-align: center;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+  margin: auto;
+  margin-top: 70px;
+}
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+  text-decoration: none;
+}
+
+
+
+/* Секция kaufman */
+/* Секция kaufman */
+/* Секция kaufman */
+.kaufman {
+  display: flex;
+  flex-direction: column;
+  padding: 90px 0;
+  background: #1f1f1f ;
+  position: relative;
+  overflow: hidden;
+}
+.section-title_theme_dark {
+  color: white;
+  z-index: 1;
+}
+.section-subtitle_theme_dark {
+  color: white;
+  z-index: 1;
+}
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+  z-index: 1;
 }
+.kaufman__triangle {
+  position: absolute;
+  right: -210px;
+  top: 0;
+}
+
+
+
+/* Секция footer */
+/* Секция footer */
+/* Общие правила для футера*/
+.footer {
+  padding:60px 0 40px;
+  background: #1f1f1f;
+}
+.footer__columns {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  min-height: 350px;
+  justify-content: space-between;
+}
+
+/* Правила для первой колонки*/
+.footer__columns_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-basis: 711px;
+}
+.footer__author {
+  margin: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+}
+.logo__theme_dark {
+  background-image: url(../images/logo_place_footer.svg);
+}
+
+/* Правила для второй и третьей колонок*/
+.footer__columns_content_info {
+  display: flex;
+  flex-direction: column;
+}
+.footer__column-links {
+  display: flex;
+  flex-direction: column;
+}
+.footer__columns_content_social {
+  display: flex;
+  flex-direction: column;
+}
+.footer__column-heading {
+  margin: 0;
+  margin-bottom: 20px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+.footer__column-links {
+  margin-bottom: 16px;
+}
+.footer__column-link {
+  margin: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  text-decoration: none;
+}
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+  padding-right: 10px;
+}
+
+
