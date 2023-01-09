@@ -1,7 +1,7 @@
 .cards__item {
-    display: flex;
-    flex-flow: column wrap;
-    text-align: center;
-    width: 240px; /* Пока временно */
-    padding-top: 60px;
-  }
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  width: 240px; /* Пока временно */
+  padding-top: 60px;
+}

@@ -1,10 +1,10 @@
 .section-title {
-    width: 60%;
-    display: block;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 60px;
-    font-weight: 600;
-    line-height: 1.15em;
-  }
+  width: 60%;
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.15em;
+}

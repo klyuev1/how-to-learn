@@ -1,0 +1,6 @@
+.khan__book-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  overflow: hidden;
+}
